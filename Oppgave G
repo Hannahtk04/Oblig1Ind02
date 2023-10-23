@@ -1,0 +1,10 @@
+# første linje definerer øverste venstre rektangel i flagget og den blå midtstripen i y-aksen.
+one = (overlay-xy(square(100, "solid", "red"), 110, 0, rectangle(30, 250, "solid", "blue"))) 
+# andre linje definerer øverste høyre rektangel i flagget.
+two = (overlay-xy(one, 150, 0, rectangle(180, 100, "solid", "red"))) 
+# tredje linje definerer den blå midtstripen i x-aksen.
+three = (overlay-xy(two, 0, 110, rectangle(330, 30, "solid", "blue"))) 
+# fjerde linje definerer nederste venstre rektangel i flagget.
+four = (overlay-xy(three, 0, 150, square(100, "solid", "red"))) 
+# femte linje definerer nederste høyre rektangel i flagget.
+five = (overlay-xy(four, 150, 150, rectangle(180, 100, "solid", "red")))
